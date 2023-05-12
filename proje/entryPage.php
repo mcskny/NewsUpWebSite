@@ -37,19 +37,11 @@
 
     if(isset($_POST))
     {
-        
-        
         if($_SESSION["errmsg"]==true){
             ?>
-                <h1 class="ErrMessage">Hatalı Giriş Yaptınız.</h1>
+                <h1 style="position:fixed;right:8px;bottom:0px;font-size:22px;color:red;" >Kullancı Adı veya Şifre yanlış.</h1>
             <?php
         }
-            
-        
-        
-        
-    
-        
     }
     ?>
 
