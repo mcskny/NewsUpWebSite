@@ -41,7 +41,7 @@
         
         if($_SESSION["errmsg"]==true){
             ?>
-                <h1>Hatalı Giriş Yaptınız.</h1>
+                <h1 class="ErrMessage">Hatalı Giriş Yaptınız.</h1>
             <?php
         }
             

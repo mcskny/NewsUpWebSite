@@ -141,6 +141,6 @@ input[type="text"],input[type="password"]{
   padding-top: 30px;
   
 }
-.errMsg{
+.ErrMessage{
   background-color: #2a1f62;
 }
