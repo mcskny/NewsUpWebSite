@@ -292,33 +292,43 @@ input.formControl,input.formControl2{
   box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
 }
 table {
-  border-collapse:collapse;
-  padding: 20px;
+  border-collapse: collapse;
   margin: auto;
+  box-shadow: -10px -10px 30px 0 #d3d3d3,10px 10px 30px 0 #1d0dca17;
+  border-radius: 20px;
   border: 0;
   
+  max-width: 750px;
 }
+
 th, td {
   border: 0;
-  padding: 40px;
-  border-radius: 20px;
-  padding-bottom: 50px;
-  margin-bottom: 300px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+th, td {
+	border: 0;
+	padding: 15px;
+  color: #180668;
+  font-weight: 700;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 
-  
+thead th {
+  width: 25%;
 }
 
 
 tbody tr:nth-child(odd) {
   background-color: #fff;
-  margin-bottom: 300px;
-
-
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 tbody tr:nth-child(even) {
   background-color: #eee;
-  margin-bottom: 300px;
-
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
