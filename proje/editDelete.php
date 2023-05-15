@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haber Up - Anasayfa</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body style="background-color: #F5F5FA;" class="mainPageBody">
     <div class="menuMainBar">
@@ -26,30 +26,35 @@
 
     <table border="1" >
         <tr>
-            <td>Id</td>
-            <td>Haber Başlık</td>
-            <td>Haber</td>
-            <td>Tarih</td>
+            <th class="once">Id</th>
+            <th>Haber Başlık</th>
+            <th>Haber</th>
+            <th class="second">Tarih</th>
         </tr>
         <?php
             $query = $connetion->prepare("SELECT * FROM haberbilgileri");
             $query->execute();
             while ($user = $query->fetch(PDO::FETCH_ASSOC)) {
                 echo "<tr>
-                        <td>".$user['id']."</td>
+                        <td class='mami'>".$user['id']."</td>
                         <td>".$user['haber_baslik']."</td>
                         <td>".$user['haber']."</td>
                         <td>".$user['eklenme_tarihi']."</td>
                     </tr>";
             }
         ?>
-        
-    </table>
-    <form  method="post">
-        <label>Silmek İstediğiniz ID bilgisini giriniz:</label>
+        <form  method="post">
+            <div class="delMain">
+            <div class="delMain2">
+            <div class="mainRight"></div>
+        <label>Silmek İstediğiniz ID bilgisini giriniz</label>
         <input type="number" name="num">
-        <button type="submit" name='btndelete'>Sil</button>
-    </form>
+        <button type="submit" class="btndelete" name='btndelete'>Sil</button>
+        </div>
+        </div>
+        </form>
+    </table>
+    
 
 <?php
     if (isset($_POST["btndelete"])) {

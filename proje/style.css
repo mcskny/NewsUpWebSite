@@ -296,49 +296,29 @@ table {
   padding: 20px;
   margin: auto;
   border: 0;
+  
 }
 th, td {
   border: 0;
-  border-bottom: 4px solid rgb(192, 192, 192);
   padding: 40px;
   border-radius: 20px;
   padding-bottom: 50px;
+  margin-bottom: 300px;
+
+  
 }
 
 
 tbody tr:nth-child(odd) {
-  background-color: #ffffff00;
+  background-color: #fff;
+  margin-bottom: 300px;
+
 
 }
 
+tbody tr:nth-child(even) {
+  background-color: #eee;
+  margin-bottom: 300px;
 
-
-
-
-input[type="number"]{
-  border-radius: 20px;
-  padding: 10px;
-  border-style: none;
-  margin-top: 10px;
-  margin-left: 30px;
-  width: 90px;
-  z-index: 4;
-  font-size: 22px;
-  box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
 }
-.btndelete{
 
-  background-color: white;
-  color: #2a1f62;
-  border-style: none;
-  margin-top: 60px;
-  margin-left: 50px;
-  border-radius: 12px;
-  font-weight: 700;
-  font-size: 24px;
-  padding: 0;
-  width: 200px;
-  height: 40px;
-  box-shadow: -10px -10px 30px 0 #fff,10px 10px 30px 0 #1d0dca17;
-  cursor: pointer;
-}
