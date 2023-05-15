@@ -188,7 +188,7 @@ input[type="text"],input[type="password"]{
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
-  color: #949494;
+  color: #180668;
 }
 .editDelete{
   position: fixed;
@@ -292,13 +292,17 @@ input.formControl,input.formControl2{
   box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
 }
 table {
-  border-collapse:separate;
-  padding: 100px;
+  border-collapse:collapse;
+  padding: 20px;
   margin: auto;
+  border: 0;
 }
 th, td {
-  border: 1px solid rgb(192, 192, 192);
-  padding: 20px;
+  border: 0;
+  border-bottom: 4px solid rgb(192, 192, 192);
+  padding: 40px;
+  border-radius: 20px;
+  padding-bottom: 50px;
 }
 
 
