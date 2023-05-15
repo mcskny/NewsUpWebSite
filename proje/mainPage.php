@@ -24,11 +24,7 @@
     <div class="main"></div>
     <!-- yaz kodunu buraya -->
     <table class="table table-striped" border="1" >
-        <tr>
-            <th>Haber Başlık</th>
-            <th>Haber</th>
-            <th>Tarih</th>
-        </tr>
+        
         <?php
             $query = $connetion->prepare("SELECT * FROM haberbilgileri");
             $query->execute();

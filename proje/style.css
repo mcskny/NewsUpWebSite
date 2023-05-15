@@ -188,7 +188,7 @@ input[type="text"],input[type="password"]{
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
-  color: #180668;
+  color: #949494;
 }
 .editDelete{
   position: fixed;
@@ -292,8 +292,8 @@ input.formControl,input.formControl2{
   box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
 }
 table {
-  border-collapse: collapse;
-  padding: 20px;
+  border-collapse:separate;
+  padding: 100px;
   margin: auto;
 }
 th, td {
@@ -310,9 +310,6 @@ tbody tr:nth-child(odd) {
 
 
 
-tbody {
-  border-radius: 20px;
-}
 
 input[type="number"]{
   border-radius: 20px;
