@@ -1,0 +1,344 @@
+.entryPage{
+    width: 500px;
+    background-color: #F5F5FA;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: -10px -10px 30px 0 #d3d3d3,20px 20px 40px 0 #190bac17;
+    padding-top: 20px;
+    margin-top: 80px;
+}
+.entryPage1{
+  width: 500px;
+  padding-bottom: 20px;
+  background-color: #F5F5FA;
+  
+  border-radius: 20px;
+  margin: auto;
+  box-shadow: -10px -10px 30px 0 #d3d3d3,20px 20px 40px 0 #190bac17;
+  padding-top: 20px;
+  margin-top: 80px;
+}
+
+
+.Submit{
+
+    background-color: white;
+    color: #2a1f62;
+    border-style: none;
+    margin-top: 50px;
+    margin-left: 140px;
+
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 26px;
+    padding: 0;
+    width: 200px;
+    height: 40px;
+    box-shadow: -10px -10px 30px 0 #fff,10px 10px 30px 0 #1d0dca17;
+    cursor: pointer;
+}
+  
+  .Submit:hover {
+    background: #f8f8ff;
+    box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
+  }
+.Submit2{
+    background-color: white;
+    color: #2a1f62;
+    border-style: none;
+    margin-top: 40px;
+    margin-left: 130px;
+
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 0;
+    width: 220px;
+    height: 40px;
+    box-shadow: -10px -10px 30px 0 #fff,10px 10px 30px 0 #1d0dca17;
+    cursor: pointer;
+}
+
+.Submit1{
+    
+    color: #2a1f62;
+    position: fixed;
+    font-weight: 700;
+    font-size: 20px;
+    left: 20px;
+    bottom: 10px;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    
+    text-decoration: none;
+
+}
+.Submit1:hover{
+    
+  color: #776bb3;
+  
+
+}
+  
+
+  
+  @media (min-width: 768px) {
+    .button-67 {
+      padding: 24px;
+    }
+  }
+input[type="text"],input[type="password"]{
+    border-radius: 20px;
+    padding: 10px;
+    border-style: none;
+    margin-top: 10px;
+    margin-left:100px;
+    width: 280px;
+    z-index: 4;
+    font-size: 22px;
+    box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
+}
+
+.htitle{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 165px;
+    color: #2a1f62;
+    
+    
+}
+.htitle1{
+    margin: 0;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 190px;
+    color: #2a1f62;
+    z-index: 5;
+    margin-bottom: 30px;
+    
+}
+.formm{
+    padding-top: 24px;
+}
+
+*{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ErrorBox{
+  background-color: #F5F5FA;
+  width: 600px;
+  height: 100px;
+  border-radius: 20px;
+  text-align: center;
+  color: #ff5e00;
+  margin: auto;
+  box-shadow: -15px -15px 30px 0 #e2e2e2, 15px 15px 30px 0 #1d0dca17;
+  margin-top: 260px;
+}
+
+
+.menuMainBar{
+  width: 120%;
+  height: 65px;
+  margin-top: -10px;
+  position: fixed;
+  background-color: white;
+  margin-left: -10px;
+  box-shadow: -15px -15px 30px 0 #e2e2e2, 15px 15px 30px 0 #18066844;
+}
+.HaberUpLogo{
+  width: 70px;
+  height: 70px;
+  margin-left: 30px;
+  position: fixed;
+}
+
+
+
+
+
+.main{
+  height: 100px;
+  width: 20px;
+
+}
+
+.scroll1{
+  background-color: #776bb3;
+  height: 1000px;
+  width: 20px;
+
+}
+.dropdown{
+  position: fixed;
+  right: 10px;
+  top: 22px;
+  border-style: none;
+  font-size: 20px;
+  border-radius: 0px;
+}
+
+.signOut{
+  position: fixed;
+  padding: 22px;
+  right: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  color: #180668;
+}
+.editDelete{
+  position: fixed;
+  padding: 22px;
+  right: 115px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  color: #180668;
+  text-decoration: none;
+
+}
+.addNew{
+  position: fixed;
+  padding: 22px;
+  right: 303px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  color: #180668;
+  text-decoration: none;
+
+}
+
+
+
+
+
+.signOut:hover{
+  background-color: rgb(238, 238, 238);
+}
+.editDelete:hover{
+  background-color: rgb(238, 238, 238);
+
+}
+.addNew:hover{
+  background-color: rgb(238, 238, 238);
+  
+}
+
+.HaberUpLogoLink{
+  position: fixed;
+  cursor: pointer;
+  width: 120px;
+  height: 65px;
+}
+
+button{
+
+  background-color: white;
+  color: #2a1f62;
+  border-style: none;
+  margin-top: 60px;
+  margin-left: 160px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 0;
+  width: 200px;
+  height: 40px;
+  box-shadow: -10px -10px 30px 0 #fff,10px 10px 30px 0 #1d0dca17;
+  cursor: pointer;
+}
+label{
+  color: #2a1f62;
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 50px;
+}
+.NewSpace{
+  color: #2a1f62;
+  margin-right: 65px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.Header-addNew{
+  color: #2a1f62;
+ margin-left: 200px;
+
+}
+.container-addNew{
+  background-color: #F5F5FA;
+  padding: 20px;
+  border-radius: 20px;
+  width: 530px;
+  margin: auto;
+  margin-top: 170px;
+  box-shadow: -10px -10px 30px 0 #d3d3d3,10px 10px 30px 0 #1d0dca17;
+
+}
+
+input.formControl,input.formControl2{
+  border-radius: 20px;
+  padding: 10px;
+  border-style: none;
+  margin-top: 10px;
+  margin-left:30px;
+  width: 250px;
+  z-index: 4;
+  font-size: 22px;
+  box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
+}
+table {
+  border-collapse:collapse;
+  padding: 20px;
+  margin: auto;
+  border: 0;
+}
+th, td {
+  border: 0;
+  border-bottom: 4px solid rgb(192, 192, 192);
+  padding: 40px;
+  border-radius: 20px;
+  padding-bottom: 50px;
+}
+
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff00;
+
+}
+
+
+
+
+
+input[type="number"]{
+  border-radius: 20px;
+  padding: 10px;
+  border-style: none;
+  margin-top: 10px;
+  margin-left: 30px;
+  width: 90px;
+  z-index: 4;
+  font-size: 22px;
+  box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
+}
+.btndelete{
+
+  background-color: white;
+  color: #2a1f62;
+  border-style: none;
+  margin-top: 60px;
+  margin-left: 50px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 0;
+  width: 200px;
+  height: 40px;
+  box-shadow: -10px -10px 30px 0 #fff,10px 10px 30px 0 #1d0dca17;
+  cursor: pointer;
+}
