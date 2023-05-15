@@ -25,12 +25,11 @@
     <form action="userDataControl.php" method="POST" id="entry" class="entry" name="entry" required="required">
     
     </form>
-    <form class="formm" action="addUser.php" style="height:100%;">
+    </div>
     <a  class="Submit1" href="addUser.php" >Yeni Hesap Oluştur</a>
-    </form>
         
     
-    </div>
+    
     
     <?php
     include("connectDatabase.php");

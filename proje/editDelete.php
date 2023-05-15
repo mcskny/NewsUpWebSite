@@ -23,32 +23,46 @@
 
     <div class="main"></div>
     <!-- yaz kodunu buraya -->
-    <table class="table table-striped" border="1" >
+
+    <table border="1" >
         <tr>
-            <th>Haber Başlık</th>
-            <th>Haber</th>
-            <th>Tarih</th>
+            <td>Id</td>
+            <td>Haber Başlık</td>
+            <td>Haber</td>
+            <td>Tarih</td>
         </tr>
         <?php
             $query = $connetion->prepare("SELECT * FROM haberbilgileri");
             $query->execute();
             while ($user = $query->fetch(PDO::FETCH_ASSOC)) {
                 echo "<tr>
+                        <td>".$user['id']."</td>
                         <td>".$user['haber_baslik']."</td>
                         <td>".$user['haber']."</td>
-                        <td>".str_replace("-", " . ",substr($user['eklenme_tarihi'], 0, 10))."</td>
+                        <td>".$user['eklenme_tarihi']."</td>
                     </tr>";
             }
         ?>
         
     </table>
-    
+    <form  method="post">
+        <label>Silmek İstediğiniz ID bilgisini giriniz:</label>
+        <input type="number" name="num">
+        <button type="submit" name='btndelete'>Sil</button>
+    </form>
 
-
-
+<?php
+    if (isset($_POST["btndelete"])) {
+        $id = $_POST["num"];
+        $query = $connetion->prepare("DELETE FROM haberbilgileri WHERE id=?");
+        $query->execute(array($id));
+        header("refresh:1;");
+    }
+?>
     
     
     
 
 </body>
 </html>
+
