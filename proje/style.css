@@ -95,10 +95,11 @@ input[type="text"],input[type="password"]{
     border-style: none;
     margin-top: 10px;
     margin-left:100px;
+    
     width: 280px;
     z-index: 4;
     font-size: 22px;
-    box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
+    box-shadow: -15px -15px 15px 0 #e2e2e2, 15px 15px 15px 0 #1d0dca17;
 }
 
 .htitle{
@@ -161,7 +162,7 @@ input[type="text"],input[type="password"]{
 
 .main{
   height: 100px;
-  width: 20px;
+  width: 100px;
 
 }
 
@@ -189,6 +190,10 @@ input[type="text"],input[type="password"]{
   cursor: pointer;
   text-decoration: none;
   color: #180668;
+}
+.signOut:hover{
+  
+  color: #b60404;
 }
 .editDelete{
   position: fixed;
@@ -249,7 +254,7 @@ button{
   padding: 0;
   width: 200px;
   height: 40px;
-  box-shadow: -10px -10px 30px 0 #fff,10px 10px 30px 0 #1d0dca17;
+  box-shadow: -10px -10px 30px 0 #e2e2e2,10px 10px 30px 0 #1d0dca17;
   cursor: pointer;
 }
 label{
@@ -291,44 +296,59 @@ input.formControl,input.formControl2{
   font-size: 22px;
   box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
 }
-table {
-  border-collapse: collapse;
-  margin: auto;
-  box-shadow: -10px -10px 30px 0 #d3d3d3,10px 10px 30px 0 #1d0dca17;
+
+
+.newMainDiv{
+  width: 200px;
+  height: 250px;
   border-radius: 20px;
+  background-color: #F5F5FA;
+  vertical-align: top;
+  padding: 20px;
+  display:inline-block;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  box-shadow: -15px -15px 15px 0 #e2e2e2, 15px 15px 15px 0 #18066844;
+
+
+}
+.haberBaslik{
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.tarih{
+  font-size: 15px;
+  margin-top: 10px;
+  color: gray;
+
+  bottom: 10px;
+
+}
+.imageNew{
+  max-width: 200px;
+  max-height: 150px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.ipnut{
+  font-size: 22px;
   border: 0;
-  
-  max-width: 750px;
+  max-width: 500px;
+  min-width: 500px;
+  margin-top: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: -15px -15px 15px 0 #dfdfdf, 15px 15px 15px 0 #1d0dca17;
 }
 
-th, td {
-  border: 0;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-th, td {
-	border: 0;
-	padding: 15px;
-  color: #180668;
-  font-weight: 700;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
+.editforum{
+  background-color: #ebebeb;
+  width: 530px;
+  border-radius: 20px;
+  box-shadow: -15px -15px 15px 0 #dfdfdf, 15px 15px 15px 0 #1d0dca17;
+  padding: 40px;
+  margin: auto;
 
-thead th {
-  width: 25%;
 }
-
-
-tbody tr:nth-child(odd) {
-  background-color: #fff;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-tbody tr:nth-child(even) {
-  background-color: #eee;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-

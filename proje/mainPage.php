@@ -29,11 +29,12 @@
             $query = $connetion->prepare("SELECT * FROM haberbilgileri");
             $query->execute();
             while ($user = $query->fetch(PDO::FETCH_ASSOC)) {
-                echo "<tr>
-                        <td>".$user['haber_baslik']."</td>
-                        <td>".$user['haber']."</td>
-                        <td>".str_replace("-", " . ",substr($user['eklenme_tarihi'], 0, 10))."</td>
-                    </tr>";
+                echo "<div class='newMainDiv'>
+                        <img src=".$user["image"]." class='imageNew'/> 
+                        <div class='haberBaslik'>".$user['haber_baslik']."</div>
+                        <div class='haber'>".substr($user['haber'],0,90)."</div>
+                        <div class='tarih'>".str_replace("-", " . ",substr($user['eklenme_tarihi'], 0, 10))."</div>
+                    </div>";
             }
         ?>
         

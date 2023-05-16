@@ -29,7 +29,9 @@
             <th class="once">Id</th>
             <th>Haber Başlık</th>
             <th>Haber</th>
-            <th class="second">Tarih</th>
+            <th></th>
+            <th class="second"> </th>
+            
         </tr>
         <?php
             $query = $connetion->prepare("SELECT * FROM haberbilgileri");
@@ -39,35 +41,21 @@
                         <td class='mami'>".$user['id']."</td>
                         <td>".$user['haber_baslik']."</td>
                         <td>".$user['haber']."</td>
-                        <td>".$user['eklenme_tarihi']."</td>
-                    </tr>";
+                        <td><a class='dell' href='delete.php?id=".$user["id"]."'>Sil</a></td>
+                        <td><a class='editt' href='edit.php?id=".$user["id"]."'>Düzenle</a></td>
+
+                        ";
             }
         ?>
-        <form  method="post">
-            <div class="delMain">
-            <div class="delMain2">
-            <div class="mainRight"></div>
-        <label>Silmek İstediğiniz ID bilgisini giriniz</label>
-        <input type="number" name="num">
-        <button type="submit" class="btndelete" name='btndelete'>Sil</button>
-        </div>
-        </div>
-        </form>
+        
+
+        </tr>
+        
+        
+        
     </table>
-    
-
-<?php
-    if (isset($_POST["btndelete"])) {
-        $id = $_POST["num"];
-        $query = $connetion->prepare("DELETE FROM haberbilgileri WHERE id=?");
-        $query->execute(array($id));
-        header("refresh:1;");
-    }
-?>
-    
-    
-    
-
+    <div class="endd"></div>
 </body>
+
 </html>
 
