@@ -150,10 +150,6 @@ th, td {
 thead th {
   width: 25%;
 }
-.mami{
-  background-color: #B0B0B0;
-  color: #0e043d;
-}
 
 tbody tr:nth-child(odd) {
   background-color: #fff;
@@ -251,7 +247,7 @@ tbody th {
 
 .endd{
   max-width: 850px;
-  height: 45px;
+  height: 15px;
   margin: auto;
 
   background-color:#2a1f62;

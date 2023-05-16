@@ -32,7 +32,7 @@
                 echo "<div class='newMainDiv'>
                         <img src=".$user["image"]." class='imageNew'/> 
                         <div class='haberBaslik'>".$user['haber_baslik']."</div>
-                        <div class='haber'>".substr($user['haber'],0,90)."</div>
+                        <div class='haber'>".substr($user['haber'],0,80)."</div>
                         <div class='tarih'>".str_replace("-", " . ",substr($user['eklenme_tarihi'], 0, 10))."</div>
                     </div>";
             }
