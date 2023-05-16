@@ -319,6 +319,12 @@ input.formControl,input.formControl2{
   color: black;
   text-decoration: none;
 }
+.haberBaslik:hover{
+  text-decoration: underline;
+}
+.clickableimg{
+  background-color: #dfdfdf;
+}
 .tarih{
   font-size: 15px;
   margin-top: 10px;
@@ -332,6 +338,13 @@ input.formControl,input.formControl2{
   border-radius: 10px;
   margin-bottom: 10px;
 }
+.imageNew:hover{
+  border-style: solid;
+  border-width: 4px;
+  border-color: #2a1f62;
+  max-width: 286px;
+}
+
 .ipnut{
   font-size: 22px;
   border: 0;

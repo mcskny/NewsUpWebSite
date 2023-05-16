@@ -1,6 +1,12 @@
 <!DOCTYPE html>
-<?php session_start();
-    include("connectDatabase.php");
+<?php
+include("connectDatabase.php");
+
+$id= @$_GET["id"];
+$haber_baslik= @$_GET["haber_bilgileri"];
+$haber= @$_GET["haber"];
+$image= @$_GET["image"];
+
 ?>
 <html lang="tr">
 <head>
@@ -23,30 +29,22 @@
 
     <div class="main"></div>
     <!-- yaz kodunu buraya -->
-    <table class="table table-striped" border="1" >
-        
-        <?php
-            $query = $connetion->prepare("SELECT * FROM haberbilgileri");
-            $query->execute();
-            while ($user = $query->fetch(PDO::FETCH_ASSOC)) {
-                echo "<div class='newMainDiv'>
-                        <a href='id.php?id=".$user["id"]."'><img src=".$user["image"]." class='imageNew'/></a> 
-                        <a href='id.php?id=".$user["id"]."' class='haberBaslik'>".$user['haber_baslik']."</a>
-                        <div class='haber'>".substr($user['haber'],0,80)."</div>
-                        <div class='tarih'>".str_replace("-", " . ",substr($user['eklenme_tarihi'], 0, 10))."</div>
-                        
-                    </div>";
-            }
-        ?>
-        
-    </table>
-    
+<form id="goform" method='POST'>
+            <?php
+                include("connectDatabase.php");
+                $degisken =  @$_GET["id"];
+                $verileriCek = $connetion->prepare("select * from haberbilgileri WHERE id=?");
+                $verileriCek->execute(array($degisken));
+                
+                while($b = $verileriCek->fetch(PDO::FETCH_ASSOC))
+                {
 
+                    echo "<img style='border-radius:20px;' src='".$b["image"]."'>";
+                    echo "<div >".$b["haber"]."</div>";
+                    
+                }
+            ?>
+        </form>
 
-
-    
-    
-    
-
-</body>
+        </body>
 </html>
