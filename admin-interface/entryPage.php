@@ -18,7 +18,7 @@
     <h1 class="htitle1">Giriş</h1>
     <form action="userDataControl.php" method="POST" id="entry" class="entry" name="entry" >
         <input type="text"  name="username" id="username" placeholder="Kullancı Adı" required="required" />
-        <input type="password"  name="userpassword" id="userpassword" placeholder="Şifre" required="required" />
+        <input type="password" style='margin-top:30px;' name="userpassword" id="userpassword" placeholder="Şifre" required="required" />
         <input type="submit" name="Submit" class= "Submit" id="Submit" value="Giriş" required="required"/>
 
     </form>
