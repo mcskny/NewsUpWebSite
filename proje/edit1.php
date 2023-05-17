@@ -63,7 +63,7 @@ $image= @$_GET["image"];
                     haber=?, eklenme_tarihi=?, image=? WHERE id=?");
                 $query->execute(array($haberb,$haber,$zaman,$img, $degisken));
                 
-                header("location:editDelete.php");
+                header("location:mainPage.php");
 
             }
 

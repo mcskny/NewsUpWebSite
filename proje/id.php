@@ -6,7 +6,7 @@ $id= @$_GET["id"];
 $haber_baslik= @$_GET["haber_bilgileri"];
 $haber= @$_GET["haber"];
 $image= @$_GET["image"];
-
+$topTick= @$_GET["topTick"];
 ?>
 <html lang="tr">
 <head>
@@ -36,11 +36,13 @@ $image= @$_GET["image"];
                 $verileriCek = $connetion->prepare("select * from haberbilgileri WHERE id=?");
                 $verileriCek->execute(array($degisken));
                 
+                
                 while($b = $verileriCek->fetch(PDO::FETCH_ASSOC))
                 {
 
                     echo "<img style='border-radius:20px;' src='".$b["image"]."'>";
-                    echo "<div >".$b["haber"]."</div>";
+                    echo "<div style='font-size:34px;font-weight:700;margin-top:40px;'>".nl2br($b["haber_baslik"])."</div>";
+                    echo "<div style='font-size:24px;margin-left:20px;margin-right:500px;margin-top:50px;'>".$b["haber"]."</div>";
                     
                 }
             ?>

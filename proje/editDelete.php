@@ -40,7 +40,7 @@
                 echo "<tr>
                         <td class='mami'>".$user['id']."</td>
                         <td>".$user['haber_baslik']."</td>
-                        <td>".$user['haber']."</td>
+                        <td>".substr($user['haber'],0,80)."</td>
                         <td><a class='dell' href='delete.php?id=".$user["id"]."'>Sil</a></td>
                         <td><a class='editt' href='edit.php?id=".$user["id"]."'>Düzenle</a></td>
 

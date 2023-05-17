@@ -25,17 +25,17 @@
 
     <div class="container-addNew" >
         <form method="post">
-            <h1 class="Header-addNew">Haber</h1>
+            <h1 style="margin-left:300px;" class="Header-addNew">Haber</h1>
             <label>Haber Başlığı:</label>
-            <input type="text" style="border: 1px solid gray;" class="formControl" name="h_baslik">
+            <input style='width: 450px; border:1px solid gray;' type="text" class="formControl" name="h_baslik">
             <br>
             <label class="NewSpace">Haber:</label>
-            <input type="text" style="margin-left:35px;border: 1px solid gray;" class="formControl2" name="haber">
+            <textarea type="text" style="margin-left:28px;border: 1px solid gray;" class="addNewTextArea" name="haber"></textarea>
             <br>
             <label class="NewSpace">Fotoğraf Url:</label>
-            <input type="text" style="margin-left:-25px;border: 1px solid gray;" class="formControl2" name="image">
+            <input type="text" style="width: 450px; margin-left:-25px;border: 1px solid gray;" class="formControl2" name="image">
             <br>
-            <button type="submit" name="btn" class="btn btn-primary">Kaydet</button>
+            <button style="margin-left:250px;" type="submit" name="btn" class="btn btn-primary">Kaydet</button>
         </form>
     </div>
 
@@ -46,8 +46,9 @@
             $h_baslik = $_POST["h_baslik"];
             $haber = $_POST["haber"];
             $image = $_POST["image"];
-            $command = $connetion->prepare("INSERT into haberbilgileri set haber_baslik=?,haber=?,image=?");
-            $insert = $command->execute(array($h_baslik, $haber, $image));
+            $topTick = 1;
+            $command = $connetion->prepare("INSERT into haberbilgileri set haber_baslik=?,haber=?,image=?, topTick=?");
+            $insert = $command->execute(array($h_baslik, $haber, $image,$topTick));
             if ($insert) { 
                 echo("<h1>İşlem Başarılı</h1>");
                 header('Location: editDelete.php');
