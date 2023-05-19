@@ -1,5 +1,5 @@
 <?php 
     session_start();
     $_SESSION["errmsg"]=false;
-    header("Location: entryPage.php");
+    header("Location: addUser.php");
 ?>

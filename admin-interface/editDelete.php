@@ -16,9 +16,9 @@
     <img href="entryPage.php" class="HaberUpLogo" src="/images/HaberUpLogo.png" alt="HaberUpLogo">
         <a href="mainPage.php" class="HaberUpLogoLink"></a>
 
-        <a href="addNew.php" class="addNew">Haber Ekle</a>
-        <a href="editDelete.php" class="editDelete">Haber Düzenle / Sil</a>
-        <a href="entryPage.php" class="signOut">Çıkış Yap</a>
+        <a href="addNew.php" class="addNew">Add News</a>
+        <a href="editDelete.php" class="editDelete">Edit/Delete News</a>
+        <a href="entryPage.php" class="signOut">Sign Out</a>
     </div>
 
     <div class="main"></div>
@@ -27,8 +27,8 @@
     <table border="1" >
         <tr>
             <th class="once">Id</th>
-            <th>Haber Başlık</th>
-            <th>Haber</th>
+            <th>News Title</th>
+            <th>News</th>
             <th></th>
             <th class="second"> </th>
             
@@ -41,8 +41,8 @@
                         <td class='mami'>".$user['id']."</td>
                         <td>".$user['haber_baslik']."</td>
                         <td>".substr($user['haber'],0,80)."</td>
-                        <td><a class='dell' href='delete.php?id=".$user["id"]."'>Sil</a></td>
-                        <td><a class='editt' href='edit.php?id=".$user["id"]."'>Düzenle</a></td>
+                        <td><a class='dell' href='delete.php?id=".$user["id"]."'>Delete</a></td>
+                        <td><a class='editt' href='edit.php?id=".$user["id"]."'>Edit</a></td>
 
                         ";
             }

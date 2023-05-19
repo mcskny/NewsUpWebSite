@@ -16,9 +16,9 @@
     <img href="entryPage.php" class="HaberUpLogo" src="/images/HaberUpLogo.png" alt="HaberUpLogo">
         <a href="mainPage.php" class="HaberUpLogoLink"></a>
 
-        <a href="addNew.php" class="addNew">Haber Ekle</a>
-        <a href="editDelete.php" class="editDelete">Haber Düzenle / Sil</a>
-        <a href="entryPage.php" class="signOut">Çıkış Yap</a>
+        <a href="addNew.php" class="addNew">Add News</a>
+        <a href="editDelete.php" class="editDelete">Edit/Delete News</a>
+        <a href="entryPage.php" class="signOut">Sign Out</a>
     </div>
 
     <div class="main"></div>
@@ -35,8 +35,8 @@
                         <a href='views.php?id=".$user["id"]."' class='haberBaslik'>".$user['haber_baslik']."</a>
                         <div class='haber'>".substr($user['haber'],0,80)."</div>
                         <div class='tarih'>".str_replace("-", "-",substr($user['eklenme_tarihi'], 0, 10))."
-                        <a style='margin-left:40px;text-decoration:none;color:orange;font-weight:800;' class='editt' href='edit1.php?id=".$user["id"]."'>Düzenle</a>
-                        <a style='margin-left:20px;text-decoration:none;color:red;font-weight:800;' href='delete1.php?id=".$user["id"]."'>Sil</a>
+                        <a style='margin-left:40px;text-decoration:none;color:orange;font-weight:800;' class='editt' href='edit1.php?id=".$user["id"]."'>Edit</a>
+                        <a style='margin-left:20px;text-decoration:none;color:red;font-weight:800;' href='delete1.php?id=".$user["id"]."'>Delete</a>
 
                         <div  class='view'>".$user['topTick']." views</div>
                         </div>

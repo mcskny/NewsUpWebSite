@@ -24,9 +24,9 @@ $image= @$_GET["image"];
     <img href="entryPage.php" class="HaberUpLogo" src="/images/HaberUpLogo.png" alt="HaberUpLogo">
         <a href="mainPage.php" class="HaberUpLogoLink"></a>
 
-        <a href="addNew.php" class="addNew">Haber Ekle</a>
-        <a href="editDelete.php" class="editDelete">Haber Düzenle / Sil</a>
-        <a href="entryPage.php" class="signOut">Çıkış Yap</a>
+        <a href="addNew.php" class="addNew">Add News</a>
+        <a href="editDelete.php" class="editDelete">Edit/Delete News</a>
+        <a href="entryPage.php" class="signOut">Sign Out</a>
     </div>
 
     <div class="main"></div>
@@ -48,7 +48,7 @@ $image= @$_GET["image"];
                     echo "<textarea required='required' name='link' class = 'ipnut' type='text' rows='3'>".$b["image"]."</textarea>";
                 }
             ?>
-            <button class="btnstyle" type="submit" name='btnUpdate'>Güncelle</button>
+            <button class="btnstyle" type="submit" name='btnUpdate'>Update</button>
         </form>
         <?php
             if (isset($_POST["btnUpdate"])) {

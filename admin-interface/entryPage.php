@@ -15,18 +15,19 @@
     
 
     <div class="entryPage1">
-    <h1 class="htitle1">Giriş</h1>
+    <h1 class="htitle1">Sign In</h1>
     <form action="userDataControl.php" method="POST" id="entry" class="entry" name="entry" >
-        <input type="text"  name="username" id="username" placeholder="Kullancı Adı" required="required" />
-        <input type="password" style='margin-top:30px;' name="userpassword" id="userpassword" placeholder="Şifre" required="required" />
-        <input type="submit" name="Submit" class= "Submit" id="Submit" value="Giriş" required="required"/>
+        <input type="text"  name="username" id="username" placeholder="User Name" required="required" />
+        <input type="password" style='margin-top:30px;' name="userpassword" id="userpassword" placeholder="Password" required="required" />
+        <input type="submit" name="Submit" class= "Submit" id="Submit" value="Sign In" required="required"/>
 
     </form>
     <form action="userDataControl.php" method="POST" id="entry" class="entry" name="entry" required="required">
     
     </form>
     </div>
-    <a  class="Submit1" href="addUser.php" >Yeni Hesap Oluştur</a>
+    <a  class="Submit1" href="addUser.php" >Sign Up Here</a>
+    <a  class="Submit4" href="/user-interface/user-main-page.php" >Contiune Without Sign</a>
         
     
     
