@@ -48,11 +48,11 @@
     
   </style>
     <div class='z-10 bg-white fixed drop-shadow-[0_5px_15px_rgba(29,13,202,0.25)] w-full h-16'>
-        <div class=" h-[77px] -mt-3 m-auto w-[791px]">
-          <div class="font-medium p-4 pl-12 pr-12 cursor-pointer hover:bg-opacity-25 hover:bg-slate-400 text-[28px] font-inter mt-[8px] pb-[10px] inline-block"><a href="user-main-page.php">Home</a></div> 
-          <div class="font-medium p-4 pl-12 pr-12 cursor-pointer hover:bg-opacity-25 hover:bg-slate-400 text-[28px] font-inter mt-[8px] pb-[10px] inline-block"><a href="About.php">About Us</a></div> 
-          <div class="font-medium p-4 pl-12 pr-12 cursor-pointer hover:bg-opacity-25 hover:bg-slate-400 text-[28px] font-inter mt-[8px] pb-[10px] inline-block"><a href="Contact.php">Contact</a></div> 
-          <div class="font-medium p-4 pl-12 pr-12 cursor-pointer hover:bg-opacity-25 hover:bg-slate-400 text-[28px] font-inter mt-[8px] pb-[10px] inline-block"><a href="/admin-interface/index.php">Sign Up</a></div> 
+        <div class=" h-[77px] -mt-3 m-auto w-[811px]">
+          <div class="font-bold text-[#2B2B2B] p-4 pl-12 pr-12 cursor-pointer hover:bg-opacity-25 hover:bg-slate-400 text-[28px] font-inter mt-[8px] pb-[10px] inline-block"><a href="user-main-page.php">Home</a></div> 
+          <div class="font-bold text-[#2B2B2B] p-4 pl-12 pr-12 cursor-pointer hover:bg-opacity-25 hover:bg-slate-400 text-[28px] font-inter mt-[8px] pb-[10px] inline-block"><a href="About.php">About Us</a></div> 
+          <div class="font-bold text-[#2B2B2B] p-4 pl-12 pr-12 cursor-pointer hover:bg-opacity-25 hover:bg-slate-400 text-[28px] font-inter mt-[8px] pb-[10px] inline-block"><a href="Contact.php">Contact</a></div> 
+          <div class="font-bold text-[#2B2B2B] p-4 pl-12 pr-12 cursor-pointer hover:bg-opacity-25 hover:bg-slate-400 text-[28px] font-inter mt-[8px] pb-[10px] inline-block"><a href="/admin-interface/index.php">Sign Up</a></div> 
 
           
 
@@ -120,7 +120,7 @@
                     <img src='".$user["image"]."' class='w-full m-auto -translate-x-1/2 -translate-y-1/2 top-1/2  left-1/2 absolute h-full object-cover rounded-3xl'> 
                     <div class='top-[280px] text-[20px] font-semibold font-inter text-[#828282] absolute' >".str_replace("-", "/",substr($user['eklenme_tarihi'], 5, 6))."</div>
                     <div class='top-[280px] text-[20px] font-semibold font-inter text-[#828282] absolute right-0' >".$user['topTick']." views</div>
-                    <div class='top-[317px] text-[20px] font-bold font-inter text-[#353535] absolute ' >".substr($user['haber'],0,90)."</div>
+                    <div class='top-[317px] text-[20px] font-bold font-inter text-[#353535] absolute ' >".substr($user['haber_baslik'],0,120)."</div>
                 </div>
             </div> </a>" ;
 
@@ -138,7 +138,7 @@
                     <div class='top-[175px] text-[20px] -right-52 font-semibold text-xl font-inter text-[#828282] absolute' >".$user['topTick']." views</div>
                     
                 </div>
-                <div class='top-5 right-1 text-[18px] absolute font-bold font-inter text-[#353535] w-52 ' >".substr($user['haber'],0,120)."</div>
+                <div class='top-5 right-1 text-[18px] absolute font-bold font-inter text-[#353535] w-52 ' >".substr($user['haber_baslik'],0,140)."</div>
                
             </div> </a>" ;
 
