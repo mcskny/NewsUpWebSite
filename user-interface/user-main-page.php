@@ -7,9 +7,15 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />   
  <meta charset='UTF-8'>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <script src='https://cdn.tailwindcss.com'></script>
+    <title>News Up - MainPage</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <script src="script.js" ></script>
 </head>
 <body>
@@ -48,7 +54,7 @@
     
   </style>
     <div class='z-10 bg-white fixed drop-shadow-[0_5px_15px_rgba(29,13,202,0.25)] w-full h-16'>
-        <div class=" h-[77px] -mt-3 m-auto w-[811px]">
+        <div class=" h-[77px] -mt-3 m-auto w-[861px]">
           <div class="font-bold text-[#2B2B2B] p-4 pl-12 pr-12 cursor-pointer hover:bg-opacity-25 hover:bg-slate-400 text-[28px] font-inter mt-[8px] pb-[10px] inline-block"><a href="user-main-page.php">Home</a></div> 
           <div class="font-bold text-[#2B2B2B] p-4 pl-12 pr-12 cursor-pointer hover:bg-opacity-25 hover:bg-slate-400 text-[28px] font-inter mt-[8px] pb-[10px] inline-block"><a href="About.php">About Us</a></div> 
           <div class="font-bold text-[#2B2B2B] p-4 pl-12 pr-12 cursor-pointer hover:bg-opacity-25 hover:bg-slate-400 text-[28px] font-inter mt-[8px] pb-[10px] inline-block"><a href="Contact.php">Contact</a></div> 
@@ -61,10 +67,14 @@
 
 
     <div><img href='index.php' class='w-20 -mt-[72px] ml-5 mb-4 fixed' src='/images/HaberUpLogo.png'></div>
-        <div class="fixed    -mt-14   right-28" id="weather-status"></div>
-        <div class="text-2xl -mt-[45px] font-inter  font-semibold fixed right-7" id="weatherSt"></div>
-        <div class="text-2xl -mt-[45px] font-inter  font-regular fixed right-[165px]" id="city-name"></div>
-    </div>
+        <div class="fixed right-0 top-0">
+        <article class=" ml-6 h-16 relative w-72 ">
+        <div class="text-2xl top-1/2 translate-x-1/2 -left-[75px] -translate-y-1/2 inline-block absolute font-inter  font-regular" id="city-name"></div>
+        <div class=" inline-block top-1/2 -translate-x-1/2 -translate-y-1/2 left-1/2 absolute" id="weather-status"></div>
+        <div class="text-2xl top-1/2 -translate-x-1/2 -translate-y-1/2 inline-block absolute right-0 font-inter  font-semibold " id="weatherSt"></div>
+        </div>
+        </article>
+      </div>
     
 
     <script>
@@ -105,17 +115,16 @@
 
 
 
-
 <div id="id1">
 
     
-    <div class=' p-0 relative z-0 w-11/12 h-[567px] bg-white m-auto drop-shadow-[0_5px_15px_rgba(29,13,202,0.25)] pt-4 rounded-2xl' >
+    <div class=' p-0 relative z-0 w-11/12 h-[567px] bg-white m-auto drop-shadow-[0_5px_15px_rgba(29,13,202,0.25)] pt-4 rounded-3xl' >
     <div class=" inline-block w-3 "></div>
     <?php 
             $query = $connetion->prepare('SELECT * FROM haberbilgileri order by topTick desc LIMIT 5');
             $query->execute();
             while ($user = $query->fetch(PDO::FETCH_ASSOC)) {
-                echo "<a href='views.php?id=".$user["id"]."' class='transition-all parent w-[219px] cursor-pointer'> <div class= 'transition-all change-div bg-[#F4F4FD] inline-block ml-4 w-[319px] h-[535px] rounded-2xl '>
+                echo "<a href='views.php?id=".$user["id"]."' class='transition-all parent w-[219px] cursor-pointer'> <div class= 'transition-all change-div bg-[#F4F4FD] inline-block ml-4 w-[319px] h-[535px] rounded-3xl '>
                 <div class='w-[275px] h-[275px] m-auto mt-16 rounded-3xl relative' >
                     <img src='".$user["image"]."' class='w-full m-auto -translate-x-1/2 -translate-y-1/2 top-1/2  left-1/2 absolute h-full object-cover rounded-3xl'> 
                     <div class='top-[280px] text-[20px] font-semibold font-inter text-[#828282] absolute' >".str_replace("-", "/",substr($user['eklenme_tarihi'], 5, 6))."</div>
@@ -131,7 +140,7 @@
             $query = $connetion->prepare('SELECT * FROM haberbilgileri order by topTick desc LIMIT 5, 18446744073709551615');
             $query->execute();
             while ($user = $query->fetch(PDO::FETCH_ASSOC)) {
-                echo "<a href='views.php?id=".$user["id"]."' class='transition-all parent w-[219px] cursor-pointer'> <div class= ' mb-4 relative transition-all change-div bg-[#F4F4FD] inline-block ml-4 w-[420px] h-[255px] rounded-2xl '>
+                echo "<a href='views.php?id=".$user["id"]."' class='transition-all parent w-[219px] cursor-pointer'> <div class= ' mb-4 relative transition-all change-div bg-[#F4F4FD] inline-block ml-4 w-[420px] h-[255px] rounded-3xl '>
                 <div class='w-[150px] ml-6 mt-6 h-[150px]  rounded-3xl bg-slate-600 relative' >
                     <img src='".$user["image"]."' class='w-full m-auto -translate-x-1/2 -translate-y-1/2 top-1/2  left-1/2 absolute h-full object-cover rounded-3xl'> 
                     <div class='top-[175px] text-[20px] font-semibold text-xl font-inter text-[#828282] absolute' >".str_replace("-", "/",substr($user['eklenme_tarihi'], 5, 6))."</div>

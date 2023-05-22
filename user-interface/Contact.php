@@ -5,17 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src='https://cdn.tailwindcss.com'></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />   
     <script src='https://cdn.tailwindcss.com'></script>
     <script src="script.js" ></script>
 </head>
 <body>
-    
+    <style>
+      .font-inter {
+      font-family: 'Inter', sans-serif;
+    }
+    </style>
 
 
 
 <div class='bg-white fixed drop-shadow-[0_5px_15px_rgba(29,13,202,0.25)] w-full -mt-24 '>
-        <div class=" h-[77px] -mt-3 m-auto w-[821px]">
+        <div class=" h-[77px] font-inter -mt-3 m-auto w-[821px]">
           <div class="font-bold text-[#2B2B2B] p-4 pl-12 pr-12 cursor-pointer hover:bg-opacity-25 hover:bg-slate-400 text-[28px] font-inter mt-[8px] pb-[10px] inline-block"><a href="user-main-page.php">Home</a></div> 
           <div class="font-bold text-[#2B2B2B] p-4 pl-12 pr-12 cursor-pointer hover:bg-opacity-25 hover:bg-slate-400 text-[28px] font-inter mt-[8px] pb-[10px] inline-block"><a href="About.php">About Us</a></div> 
           <div class="font-bold text-[#2B2B2B] p-4 pl-12 pr-12 cursor-pointer hover:bg-opacity-25 hover:bg-slate-400 text-[28px] font-inter mt-[8px] pb-[10px] inline-block"><a href="Contact.php">Contact</a></div> 

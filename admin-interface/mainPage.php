@@ -33,7 +33,7 @@
                         <a href='views.php?id=".$user["id"]."'> <img src='".$user["image"]."' class='imageNew'/></a>
                         
                         <a href='views.php?id=".$user["id"]."' class='haberBaslik'>".$user['haber_baslik']."</a>
-                        <div class='haber'>".substr($user['haber'],0,80)."</div>
+                        <div class='haber'></div>
                         <div class='tarih'>".str_replace("-", "-",substr($user['eklenme_tarihi'], 0, 10))."
                         <a style='margin-left:40px;text-decoration:none;color:orange;font-weight:800;' class='editt' href='edit1.php?id=".$user["id"]."'>Edit</a>
                         <a style='margin-left:20px;text-decoration:none;color:red;font-weight:800;' href='delete1.php?id=".$user["id"]."'>Delete</a>
