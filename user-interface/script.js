@@ -1,3 +1,4 @@
+
     var apiKey = '9367cf6c18fc36aafc40c31b6109d2a8'; 
     function displayCityStatus(weatherStatus, weatherSt, cityAbbreviation) {
       var statusElement = $('#weather-status');
@@ -6,6 +7,8 @@
       var cityAbbreviationElement = $('#city-abbreviation');
 
       var weatherIcon = '';
+      
+        
 
       switch (weatherStatus) {
         case 'Clear':
@@ -55,6 +58,6 @@
         console.log('Tarayıcınız konum hizmetlerini desteklemiyor.');
       }
     }
-
+    
     getWeatherByLocation();
 
