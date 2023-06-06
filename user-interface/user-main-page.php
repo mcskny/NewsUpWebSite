@@ -127,10 +127,10 @@
 
     <div><img href='index.php' class='w-20 -mt-[72px] ml-5 mb-4 fixed' src='/images/HaberUpLogo.png'></div>
         <div class="fixed right-0 top-0">
-        <article class=" ml-6 h-16 relative w-72 ">
-        <div class="text-2xl top-1/2 translate-x-1/2 -left-[75px] -translate-y-1/2 inline-block absolute font-inter  font-regular" id="city-name"></div>
-        <div class=" inline-block top-1/2 -translate-x-1/2 -translate-y-1/2 left-1/2 absolute" id="weather-status"></div>
-        <div class="text-2xl top-1/2 -translate-x-1/2 -translate-y-1/2 inline-block absolute right-6 font-inter  font-semibold " id="weatherSt"></div>
+        <article class=" ml-6 h-16 relative w-80 ">
+        <div class="text-2xl mt-[14px]  inline-block absolute font-inter  font-regular" id="city-name"></div>
+        <div class=" inline-block right-32 mt-1 absolute" id="weather-status"></div>
+        <div class="text-2xl inline-block absolute right-10 mt-4 font-inter  font-semibold " id="weatherSt"></div>
         </div>
         </article>
       </div>

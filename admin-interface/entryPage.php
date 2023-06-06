@@ -39,7 +39,7 @@
     {
         if($_SESSION["errmsg"]==true){
             ?>
-                <h1 style="position:fixed;right:8px;bottom:0px;font-size:22px;color:red;" >Kullancı Adı veya Şifre yanlış.</h1>
+                <h1 style="position:fixed;right:400px;bottom:0px;font-size:24px;color:red;" >Username or Password is incorrect.</h1>
             <?php
         }
     }
