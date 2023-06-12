@@ -1,10 +1,5 @@
-<h1 align="center">Project Name</h1>
+<h1 align="center">News Up</h1>
 
-<p align="center">
-    <img src="https://your-image-url.com" alt="Project Logo" width="200" height="200">
-</p>
-
-<p align="center">Brief project description.</p>
 
 ## Requirements
 - XAMPP program must be installed to use the site.
